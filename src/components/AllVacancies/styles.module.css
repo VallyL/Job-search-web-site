@@ -1,0 +1,104 @@
+.bigContainer {
+  background-color: #e4f2ff;
+  padding-bottom: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  row-gap: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 20px;
+}
+
+/*.vacancyComtainer {
+  background-color: #e4f2ff;
+  padding-top: 10px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}*/
+
+.vacancyComtainer > h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32.87px;
+  margin-left: 60px;
+  align-self: start;
+}
+
+.vacancyComtainer > p {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 17.61px;
+  color: #8d8d8dcc;
+  margin-bottom: 50px;
+  margin-left: 60px;
+  align-self: start;
+}
+
+.smallContainer {
+  width: 100%;
+}
+
+.vacancyDiv {
+  max-width: 433px;
+  height: 350px;
+  background-color: white;
+  box-shadow: 2px 2px 2px rgb(166, 166, 166);
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 30px;
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+.greyP {
+  color: #8d8d8dcc;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.78px;
+}
+
+.mainTexyVaca {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 25.83px;
+}
+
+.companyName {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.vacancyDiv > a {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #274059;
+}
+
+.vacancyDiv:hover {
+  background-color: rgb(235, 233, 233);
+}
+
+.categoryContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.categoryName {
+  background-color: #92c9fc7d;
+  padding: 20px;
+  padding-left: 90px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}

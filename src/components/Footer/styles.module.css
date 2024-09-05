@@ -1,0 +1,44 @@
+.footerContainer {
+  background-color: #52606d;
+  padding: 50px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.popularCities {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 25.83px;
+}
+
+.citiesContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.citiesContainer > a {
+  color: #d0e8ff;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 25.83px;
+}
+
+.footerContainer > hr {
+  border: 2px solid #465461;
+  width: 100%;
+}
+
+.logosContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.smallerLogoDiv {
+  display: flex;
+  gap: 40px;
+}

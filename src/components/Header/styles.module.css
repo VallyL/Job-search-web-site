@@ -1,0 +1,49 @@
+.navContainer {
+  background-color: #cde7ff;
+  display: flex;
+  align-items: center;
+  padding: 30px 60px;
+  gap: 20px;
+}
+
+.navLogo {
+  width: 111px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.linksContainer {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.innerLinkBtnCont {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navLinks {
+  color: #000000cc;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 17.61px;
+}
+
+.navBtn {
+  width: 65px;
+  height: 44px;
+  background-color: #ffffff;
+  border: none;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 17.61px;
+}

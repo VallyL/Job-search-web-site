@@ -1,0 +1,53 @@
+.categoriesContainer {
+  background-color: #e4f2ff;
+  padding: 80px 60px;
+}
+
+.categoriesParph {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32.87px;
+  margin-bottom: 50px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 30px;
+  column-gap: 20px;
+}
+
+.showMoreLess,
+.mainCategories {
+  max-width: 270px;
+  height: 198px;
+  box-shadow: 2px 2px 2px rgb(166, 166, 166);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 30px;
+  padding-left: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.78px;
+  cursor: pointer;
+}
+
+.showMoreLess {
+  border: 2px solid rgb(173, 172, 172);
+  background-color: transparent;
+}
+
+.mainCategories {
+  background-color: white;
+  border: none;
+}
+
+.mainCategories:hover {
+  background-color: rgb(235, 233, 233);
+}
+
+.showMoreLess:hover {
+  background-color: rgb(181, 181, 181);
+}

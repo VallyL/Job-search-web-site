@@ -1,0 +1,103 @@
+.searchContainer {
+  background-color: #cde7ff;
+  position: relative;
+  overflow: hidden;
+  padding: 150px 60px;
+  padding-bottom: 350px;
+  width: 100%;
+}
+
+.searchHeading {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 75.14px;
+  max-width: 628px;
+  margin-bottom: 30px;
+}
+
+.inputContainer {
+  width: 932px;
+  height: 105px;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  box-shadow: 4px 4px 3px rgb(167, 167, 167);
+  background-color: white;
+}
+
+.absolutLogoS {
+  position: absolute;
+  left: 30px;
+  top: 39px;
+}
+
+.absolutLogoL {
+  position: absolute;
+  top: 39px;
+  left: 400px;
+}
+
+.inputPosition,
+.inputCity {
+  width: 39.7%;
+  height: 100%;
+  padding-left: 90px;
+  border: none;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.13px;
+  transition: none;
+  border: none;
+}
+
+.searchBtn {
+  width: 192px;
+  height: 100%;
+  background-color: #274059;
+  border: none;
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 25.83px;
+  cursor: pointer;
+}
+
+.backgroungImgF {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  width: 1300px;
+  height: 903px;
+  z-index: 0;
+}
+
+@media screen and (max-width: 1080px) {
+  .backgroungImgF {
+    width: 700px;
+    height: 600px;
+    top: 100px;
+  }
+  .searchContainer {
+    padding: 100px 60px;
+    padding-bottom: 250px;
+  }
+  .inputContainer {
+    width: 632px;
+    height: 85px;
+  }
+  .inputPosition,
+  .inputCity {
+    padding-left: 50px;
+    font-size: 16px;
+  }
+  .absolutLogoS {
+    left: 19px;
+    top: 29px;
+  }
+
+  .absolutLogoL {
+    top: 29px;
+    left: 250px;
+  }
+}
