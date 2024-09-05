@@ -51,3 +51,21 @@
 .showMoreLess:hover {
   background-color: rgb(181, 181, 181);
 }
+
+@media screen and (max-width: 980px) {
+  .categoriesContainer {
+    padding: 50px 40px;
+  }
+  .categoriesParph {
+    margin-bottom: 30px;
+  }
+  .gridContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .showMoreLess,
+  .mainCategories {
+    max-width: 200px;
+    height: 158px;
+    gap: 15px;
+  }
+}

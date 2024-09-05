@@ -4,3 +4,8 @@
   box-sizing: border-box;
   transition: all 0.5s;
 }
+
+#root {
+  max-width: 1800px;
+  margin: 0 auto;
+}

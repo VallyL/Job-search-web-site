@@ -22,3 +22,14 @@
   width: 115px;
   height: 41.78px;
 }
+
+@media screen and (max-width: 1120px) {
+  .partnerContainer {
+    padding: 30px 40px;
+  }
+
+  .imagesArr {
+    width: 85px;
+    height: 41.78px;
+  }
+}

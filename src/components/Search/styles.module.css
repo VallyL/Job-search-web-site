@@ -101,3 +101,14 @@
     left: 250px;
   }
 }
+
+@media screen and (max-width: 980px) {
+  .searchHeading {
+    font-size: 53px;
+    line-height: 70.14px;
+  }
+  .searchContainer {
+    padding: 80px 40px;
+    padding-bottom: 200px;
+  }
+}
