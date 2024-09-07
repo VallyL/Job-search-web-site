@@ -23,14 +23,8 @@ function SmallSearch({ allVacancies }) {
     <div className={styles.searchContainer}>
       <p className={styles.perfectJob}>Find your perfect job:</p>
       <div className={styles.inputContainer}>
-        <img src={SearchLogo} className={styles.absolutLogoS} />
-        <img src={LocationLogo} className={styles.absolutLogoL} />
         <Autocomplete
-          sx={{
-            border: "none",
-            height: "100%",
-            width: "50%",
-          }}
+          sx={{}}
           options={uniqueJobTitles}
           getOptionLabel={(option) => option}
           value={selectedPosition}
@@ -39,25 +33,17 @@ function SmallSearch({ allVacancies }) {
             <TextField
               {...params}
               placeholder="Position"
+              className={styles.inputPosition}
               inputProps={{
                 ...params.inputProps,
                 autoComplete: "off",
               }}
-              sx={{
-                border: "none",
-                transition: "none",
-                minHeight: "100%",
-                outline: "none",
-                width: "100%",
-              }}
+              sx={{}}
             />
           )}
         />
         <Autocomplete
-          sx={{
-            width: "50%",
-          }}
-          className={styles.inputCity}
+          sx={{}}
           options={uniqueLocations}
           getOptionLabel={(option) => option}
           value={selectedLocation}
@@ -71,9 +57,7 @@ function SmallSearch({ allVacancies }) {
                 ...params.inputProps,
                 autoComplete: "off",
               }}
-              sx={{
-                width: "100%",
-              }}
+              sx={{}}
             />
           )}
         />

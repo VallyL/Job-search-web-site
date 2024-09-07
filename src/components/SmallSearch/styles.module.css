@@ -21,29 +21,16 @@
   background-color: white;
 }
 
-.absolutLogoS {
-  position: absolute;
-  left: 20px;
-  top: 30px;
-}
-
-.absolutLogoL {
-  position: absolute;
-  top: 30px;
-  left: 300px;
-}
-
-.inputPosition,
-.inputCity {
-  width: 39.7%;
-  height: 100%;
-  padding-left: 90px;
-  border: none;
+.inputCity > div,
+.inputPosition > div {
+  width: 300px;
+  height: 75px;
+  padding-left: 200px;
   font-size: 18px;
   font-weight: 400;
   line-height: 21.13px;
   transition: none;
-  border: none;
+  border-radius: 0;
 }
 
 .searchBtn {
@@ -56,4 +43,68 @@
   font-weight: 700;
   line-height: 25.83px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1080px) {
+  .searchContainer {
+    padding: 0px 50px;
+    padding-bottom: 40px;
+  }
+  .inputContainer {
+    width: 632px;
+    height: 65px;
+  }
+  .inputCity > div,
+  .inputPosition > div {
+    width: 260px;
+    height: 65px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .searchContainer {
+    padding: 0px 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .searchContainer {
+    padding: 0px 30px;
+    padding-bottom: 30px;
+  }
+  .inputContainer {
+    width: 432px;
+    height: 45px;
+  }
+  .inputCity > div,
+  .inputPosition > div {
+    width: 170px;
+    height: 45px;
+    font-size: 14px;
+  }
+  .searchBtn {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 495px) {
+  .searchContainer {
+    padding: 0px 20px;
+    padding-bottom: 20px;
+  }
+  .inputContainer {
+    width: 262px;
+    height: 35px;
+  }
+  .inputCity > div,
+  .inputPosition > div {
+    width: 100px;
+    height: 35px;
+    font-size: 12px;
+  }
+  .searchBtn {
+    font-size: 12px;
+  }
 }
