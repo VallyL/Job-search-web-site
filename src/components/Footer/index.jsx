@@ -50,11 +50,16 @@ function Footer() {
       <hr></hr>
       <div className={styles.logosContainer}>
         <Link to="/">
-          <img src={LogoCopy} alt="Logo" />
+          <img src={LogoCopy} alt="Logo" className={styles.logo} />
         </Link>
         <div className={styles.smallerLogoDiv}>
           {smallLogos.map((logo, index) => (
-            <img key={index} src={logo.src} alt={logo.alt} />
+            <img
+              key={index}
+              src={logo.src}
+              alt={logo.alt}
+              className={styles.partners}
+            />
           ))}
         </div>
       </div>

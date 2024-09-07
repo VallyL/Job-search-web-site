@@ -17,6 +17,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .citiesContainer > a {
@@ -72,5 +74,27 @@
   }
   .smallerLogoDiv {
     gap: 20px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .footerContainer {
+    padding: 20px 20px;
+    gap: 20px;
+  }
+  .popularCities {
+    font-size: 12px;
+  }
+  .citiesContainer > a {
+    font-size: 9px;
+  }
+  .smallerLogoDiv {
+    gap: 10px;
+  }
+  .logo {
+    width: 70px;
+  }
+  .partners {
+    width: 20px;
   }
 }
