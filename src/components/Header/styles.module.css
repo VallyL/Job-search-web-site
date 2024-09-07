@@ -4,6 +4,10 @@
   align-items: center;
   padding: 30px 60px;
   gap: 20px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 3;
 }
 
 .navLogo {
@@ -46,4 +50,33 @@
   font-size: 15px;
   font-weight: 600;
   line-height: 17.61px;
+}
+
+@media screen and (max-width: 980px) {
+  .navContainer {
+    padding: 20px 40px;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .navContainer {
+    padding: 15px 30px;
+    gap: 15px;
+  }
+  .navLogo {
+    width: 91px;
+  }
+  .innerLinkBtnCont {
+    gap: 15px;
+  }
+  .navLinks {
+    font-size: 13px;
+  }
+  .navBtn {
+    width: 55px;
+    height: 34px;
+    padding-top: 8px;
+    font-size: 12px;
+    font-weight: 500;
+  }
 }

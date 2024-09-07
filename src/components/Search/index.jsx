@@ -27,14 +27,8 @@ function Search({ allVacancies }) {
           One click and work in your pocket
         </h1>
         <div className={styles.inputContainer}>
-          <img src={SearchLogo} className={styles.absolutLogoS} />
-          <img src={LocationLogo} className={styles.absolutLogoL} />
           <Autocomplete
-            sx={{
-              border: "none",
-              height: "100%",
-              width: "50%",
-            }}
+            sx={{}}
             options={uniqueJobTitles}
             getOptionLabel={(option) => option}
             value={selectedPosition}
@@ -43,25 +37,19 @@ function Search({ allVacancies }) {
               <TextField
                 {...params}
                 placeholder="Position"
+                className={styles.inputPosition}
                 inputProps={{
                   ...params.inputProps,
                   autoComplete: "off",
                 }}
-                sx={{
-                  border: "none",
-                  transition: "none",
-                  minHeight: "100%",
-                  outline: "none",
-                  width: "100%",
-                }}
+                sx={{}}
               />
             )}
           />
           <Autocomplete
             sx={{
-              width: "50%",
+              transition: "none",
             }}
-            className={styles.inputCity}
             options={uniqueLocations}
             getOptionLabel={(option) => option}
             value={selectedLocation}
@@ -76,7 +64,7 @@ function Search({ allVacancies }) {
                   autoComplete: "off",
                 }}
                 sx={{
-                  width: "100%",
+                  transition: "none",
                 }}
               />
             )}

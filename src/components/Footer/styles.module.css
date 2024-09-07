@@ -58,3 +58,19 @@
     line-height: 22.83px;
   }
 }
+
+@media screen and (max-width: 670px) {
+  .footerContainer {
+    padding: 30px 30px;
+    gap: 20px;
+  }
+  .popularCities {
+    font-size: 16px;
+  }
+  .citiesContainer > a {
+    font-size: 12px;
+  }
+  .smallerLogoDiv {
+    gap: 20px;
+  }
+}

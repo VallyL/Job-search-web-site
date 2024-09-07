@@ -2,6 +2,7 @@
   padding: 50px 60px;
   background-color: white;
   display: flex;
+  gap: 20px;
   justify-content: space-between;
   align-items: center;
 }
@@ -27,9 +28,40 @@
   .partnerContainer {
     padding: 30px 40px;
   }
-
   .imagesArr {
     width: 85px;
     height: 41.78px;
+  }
+  .partnerParagraph {
+    font-size: 14px;
+  }
+  .imagContainer {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .partnerContainer {
+    padding: 20px 30px;
+  }
+  .imagesArr {
+    width: 65px;
+    height: 31.78px;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .partnerContainer {
+    padding: 15px 30px;
+  }
+  .imagesArr {
+    width: 45px;
+    height: 21.78px;
+  }
+  .partnerParagraph {
+    font-size: 12px;
+  }
+  .imagContainer {
+    gap: 10px;
   }
 }

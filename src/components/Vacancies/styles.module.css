@@ -117,10 +117,10 @@
   }
   .vacancyComtainer > p {
     margin-bottom: 10px;
-    margin-left: 40px;
+    margin-left: 30px;
   }
   .vacancyComtainer > h1 {
-    margin-left: 40px;
+    margin-left: 30px;
   }
   .vacancyDiv {
     max-width: 333px;
@@ -155,5 +155,39 @@
     padding-top: 14px;
     width: 200px;
     height: 53px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .categoryContainer {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .categoryContainer {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 15px;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .vacancyComtainer > h1 {
+    font-size: 22px;
+  }
+  .vacancyComtainer > p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 10.61px;
+  }
+  .categoryName {
+    padding: 10px;
+    padding-left: 50px;
+    font-size: 20px;
+  }
+  .showMoreBtn {
+    margin-top: 20px;
+    font-size: 16px;
+    padding-top: 9px;
+    width: 150px;
+    height: 43px;
   }
 }

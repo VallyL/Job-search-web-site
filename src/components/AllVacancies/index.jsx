@@ -7,14 +7,17 @@ function AllVacancies({
   selectedPosition,
   selectedLocation,
 }) {
+  const location = useLocation();
+
   const filteredVacancies = allVacancies.filter((vacancy) => {
-    const positionMatch = selectedPosition
-      ? vacancy.title === selectedPosition
-      : true;
-    const locationMatch = selectedLocation
-      ? vacancy.location === selectedLocation
-      : true;
-    return positionMatch && locationMatch;
+    if (location.state.selectedPosition && location.state.selectedLocation) {
+      return (
+        vacancy.title === location.state.selectedPosition &&
+        vacancy.location === location.state.selectedLocation
+      );
+    } else {
+      return true;
+    }
   });
 
   return (
