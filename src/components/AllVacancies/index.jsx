@@ -10,7 +10,7 @@ function AllVacancies({
   const location = useLocation();
 
   const filteredVacancies = allVacancies.filter((vacancy) => {
-    if (location.state.selectedPosition && location.state.selectedLocation) {
+    if (location.state?.selectedPosition && location.state?.selectedLocation) {
       return (
         vacancy.title === location.state.selectedPosition &&
         vacancy.location === location.state.selectedLocation
